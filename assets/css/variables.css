@@ -1,0 +1,64 @@
+:root {
+  /* Color name */
+  --сn-white: #fff;
+  --сn-light-1: #f8f8f8;
+  --сn-light-2: #f5f5f5;
+  --сn-light-3: #e5e5e5;
+  --сn-light-gray: #b5b5b5;
+  --сn-dark-grey: #434343;
+  --cn-grey: #4a4a4a;
+  --сn-green: #42a62a;
+  --сn-black: #010101;
+
+  /* Color */
+  --с-text: var(--сn-dark-grey);
+  --с-bg: var(--сn-white);
+  --с-bg-additional: var(--сn-light-2);
+
+  --с-accent: var(--сn-green);
+  --с-accent-text: var(--сn-white);
+  --с-accent-bg: var(--с-accent);
+
+  --c-tooltip-text: var(--сn-white);
+  --c-tooltip-bg: var(--сn-light-gray);
+  --c-tooltiptext-border: var(--сn-light-3);
+
+  --c-top-menu-item-text: var(--сn-white);
+  --c-top-menu-item-bg: var(--сn-dark-grey);
+
+  --с-table-header-text: var(--сn-white);
+  --с-table-header-bg: var(--сn-light-gray);
+  --с-table-border: var(--сn-light-3);
+  --c-table-arrow: var(--cn-grey);
+  --c-table-through-line: var(--сn-light-1);
+
+  --с-accordion-through-row-bg: var(--сn-light-1);
+
+  --с-icon-tooltip-text: var(--с-table-header-text);
+  --с-icon-tooltip-bg: var(--с-table-header-bg);
+  --с-tooltip-text: var(--с-text);
+  --с-tooltip-bg: var(--с-bg);
+
+  --с-tabs-bg: var(--с-bg);
+  --с-tabs-btn-text: var(--с-text);
+  --с-tabs-btn-bg: transparent;
+  --с-tabs-btn-border: var(--сn-light-gray);
+  --с-tabs-btn-accent-text: var(--с-accent-text);
+  --с-tabs-btn-accent-bg: var(--с-accent);
+  --с-tabs-btn-accent-border: var(--с-accent);
+
+  --с-menu-text: var(--с-bg);
+  --с-menu-bg: var(--с-text);
+  --с-menu-accent: var(--с-accent);
+
+  --c-counter-text: var(--сn-black);
+  --c-counter-bg: var(--сn-white);
+
+  /* Other */
+  --b-radius: 4px;
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
+}

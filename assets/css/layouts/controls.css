@@ -1,0 +1,39 @@
+.controls {
+  padding: 10px 30px 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: var(--с-bg-additional);
+}
+
+.controls__button {
+  padding: 7px;
+  color: var(--с-tabs-btn-text);
+  background-color: var(--с-tabs-btn-bg);
+  border: 2px solid var(--с-tabs-btn-accent-border);
+}
+
+.controls__button--active,
+.controls__button:active {
+  color: var(--с-tabs-btn-accent-text);
+  background-color: var(--с-tabs-btn-accent-bg);
+  border-color: var(--с-tabs-btn-accent-border);
+}
+
+.controls__history {
+  align-self: center;
+  color: var(--с-text);
+  font-weight: normal;
+  font-size: 14px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.controls__history:hover {
+  text-decoration: underline;
+}
+
+.controls__history:active {
+  color: var(--с-accent);
+}

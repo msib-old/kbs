@@ -1,0 +1,150 @@
+#app {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "left top top"
+    "left content tabs"
+    "left controls controls";
+  grid-template-rows: auto minmax(220px, 1fr) auto;
+  grid-template-columns: auto minmax(220px, 1fr) auto;
+  color: var(--с-text);
+  background-color: var(--с-bg-additional);
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  #app {
+    height: auto;
+    overflow: auto;
+  }
+}
+
+.button {
+  text-align: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 600;
+  border-radius: var(--b-radius);
+  user-select: none;
+  cursor: pointer;
+}
+
+.delimiter {
+  margin: auto;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  border-color: var(--с-accent-text);
+  border-style: solid;
+  border-left: none;
+  border-top: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  top: -3px;
+  margin-left: 5px;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  color: var(--c-tooltip-text);
+  background-color: var(--c-tooltip-bg);
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tooltip--invert {
+  color: var(--с-text);
+  background-color: var(--с-bg);
+}
+
+.tooltip__icon {
+  position: relative;
+  top: -2px;
+  left: 0px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.tooltip__text {
+  position: absolute;
+  top: 30px;
+  padding: 20px;
+  display: none;
+  width: max-content;
+  max-width: 50vw;
+  color: var(--с-text);
+  background-color: var(--с-bg);
+  border: 1px solid var(--c-tooltiptext-border);
+  border-radius: var(--b-radius);
+  box-shadow: 5px 10px 13px rgba(58, 60, 57, 0.71);
+  user-select: text;
+  z-index: var(--z-index-2);
+}
+
+.tooltip:hover .tooltip__text {
+  display: block;
+}
+
+.tooltip:hover .tooltip__text::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.top-menu {
+  grid-area: top;
+  color: var(--с-text);
+  background-color: var(--с-bg-additional);
+}
+
+.left-menu {
+  grid-area: left;
+  min-width: 70px;
+  height: 100%;
+  color: var(--с-menu-text);
+  background-color: var(--с-menu-bg);
+}
+
+.tabs {
+  grid-area: tabs;
+  color: var(--с-text);
+  background-color: var(--с-bg-additional);
+}
+
+.controls {
+  grid-area: controls;
+}
+
+.content {
+  grid-area: content;
+  width: max-content;
+  overflow: auto;
+}

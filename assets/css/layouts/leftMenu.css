@@ -1,0 +1,54 @@
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  overflow-y: auto;
+}
+
+.left-menu__item {
+  position: relative;
+  padding: 18px;
+  font-size: 0;
+  text-align: center;
+  fill: var(--с-accent-bg);
+}
+
+.left-menu__item:hover {
+  background-color: var(--с-accent-bg);
+  fill: var(--с-text);
+}
+
+.left-menu__item--more {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.left-menu__item--logo:hover {
+  background-color: var(--с-accent-text);
+}
+
+.left-menu__counter {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px;
+  min-width: 17px;
+  min-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--c-counter-text);
+  background-color: var(--c-counter-bg);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.left-menu__counter--notification {
+  right: 16px;
+  top: 16px;
+}
+
+.left-menu__counter--chat {
+  right: 16px;
+  top: 11px;
+}
